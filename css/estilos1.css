@@ -1,0 +1,409 @@
+.modal-open{
+    overflow-y: scroll !important;
+}
+
+body{
+    padding: 0px !important;
+}
+
+.menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 30px 36px 0px 36px;
+	position: absolute;
+	z-index: 2000;
+	width: 100%;
+	transition: all 1s;
+}
+
+.menu .menu-info{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+    width: 100%;
+}
+
+.menu .menu-info .menu-bar{
+    width: calc(100%/4);
+    text-align: left;
+}
+
+.menu .menu-info .menu-boton .boton .fas{
+	display: none;
+	color: white;
+	font-size: 35px;
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+.menu .menu-info .menu-boton p a{
+	color: white;
+	font-family: 'Alex Brush', cursive;
+	font-size: 35px;
+    text-decoration: none;
+}
+
+.menu .menu-info .main{
+    width: calc(100%/3,5);
+    text-align: center;
+}
+
+.menu .menu-info .main ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.menu .menu-info .main ul .botones1{
+    display: none;
+}
+
+.menu .menu-info .main ul li{
+	padding: 10px;
+}
+
+.menu .menu-info .main ul li a{
+	color: white;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+.menu .menu-info .botones2{
+    width: calc(100%/4);
+    text-align: right;
+}
+
+.menu .menu-info .botones2 .opciones{
+    text-align: center;
+}
+
+.menu .menu-info .botones2 .btn, .botones1 .btn{
+	width: 45px;
+    height: 38px;
+}
+
+.fixed{
+	position: fixed;
+	background-color: rgba(0,0,0,0.8);
+}
+
+section .texto1, .texto3{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 100%;
+    padding: 0px 200px 0px 200px !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+section .texto1 h1, .texto3 h1{
+	font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
+}
+
+section .texto2{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../img/fondo31.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 400px;
+	color: white;
+}
+
+section .texto4{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../img/fondo33.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 400px;
+	color: white;
+}
+
+section .texto2 h1, .texto4 h1{
+	font-size: 110px;
+	text-shadow: 1px 1px 2px black;
+	font-family: 'Alex Brush', cursive;
+	font-weight: bold;
+}
+
+.carousel-item img{
+	object-fit: cover;
+}
+
+.carousel-caption{
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial;
+	text-align: center;
+}
+
+.carousel-caption h1{
+	font-family: 'Alex Brush', cursive;
+	font-size: 110px;
+	color: white;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px black;
+}
+
+.carousel-caption p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	color: white;
+	font-weight: 500;
+	text-shadow: 1px 1px 2px black;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: left;
+	padding: 40px 0px;
+}
+
+footer .container{
+    max-width: 1500px;
+}
+
+.info .elemento-info .info1 i{
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.info p, span{
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+}
+
+.info h6{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+
+.info a{
+	background-color: white;
+	border-radius: 50%;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+.info a:hover{
+	text-decoration: none;
+	color: #0f0f0f;
+}
+
+@media screen and (max-width: 1399px){
+    
+    section .texto1, .texto3{
+	    padding: 0px 100px 0px 100px !important;
+        font-size: 14px;
+    }
+    
+    section .texto1 h1, .texto3 h1{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+    
+    section .texto1, .texto3{
+        font-size: 14px;
+        padding: 0px 40px !important;
+    }
+    
+    section .texto1 h1, .texto3 h1{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+	.carousel-item .carousel-caption h1{
+		font-size: 90px;
+	}
+
+	.carousel-item .carousel-caption p{
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	footer{
+		text-align: center;
+	}
+
+	.info .elemento-info{
+		align-items: center;
+	}
+    
+    .menu .menu-info .menu-bar{
+        width: calc(100%/3);
+    }
+    
+    .menu .menu-info .main{
+        width: calc(100%/2,5);
+        text-align: center;
+    }
+    
+    .menu .menu-info .botones2{
+        width: calc(100%/3);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    .menu .menu-info .menu-boton p a{
+        font-size: 33px;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+
+	.menu{
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+	}
+    
+    .menu .menu-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .menu-info .main{
+        background-color: black;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .menu .menu-info .main ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+    }
+    
+    .menu .menu-info .main ul .botones1{
+        height: calc(100% / 2);
+        padding: 20px;
+        display: block;
+    }
+    
+    .menu .menu-info .main ul .botones1 .btn{
+        z-index: 5000;
+        font-size: 25px;
+        width: 60px;
+	}
+    
+    .menu .menu-info .main ul .botones1 .btn i{
+        width: 30px;
+    }
+    
+    .menu .menu-info .main ul li a{
+        font-size: 25px !important;
+    }
+    
+    .menu .menu-info .inicio{
+        height: calc(100% / 2);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .menu .menu-info .botones1{
+        text-align: center;
+    }
+    
+    .menu .menu-info .botones2{
+        position: absolute;
+        width: 0px;
+        height: 0px;
+    }
+	
+	.menu .menu-info .menu-boton .boton .fas{
+		display: block;
+	}
+    
+    .menu .menu-info .menu-bar{
+        width: 100%;
+    }
+
+	.menu .menu-info .menu-bar .menu-boton{
+		font-size: 14px;
+		padding: 16px 25px 0px 25px;
+		display: flex;
+		justify-content: space-between;
+		background-color: black;
+	}
+    
+    .menu .menu-info .menu-bar .menu-boton .boton{
+        z-index: 4000;
+    }
+    
+
+	.carousel-item .carousel-caption h1{
+		font-size: 60px;
+	}
+
+	.carousel-item .carousel-caption p{
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	section .texto1, .texto3{
+		padding: 60px !important;
+	}
+
+	section .texto1 h1, .texto3 h1{
+		margin-bottom: 40px;
+	}
+
+	section .texto1 p, .texto3 p{
+		font-size: 15px;
+	}
+
+	section .texto2 h1, .texto4 h1{
+		font-size: 80px;
+	}
+    
+    section .texto2{
+        background-attachment: scroll !important;
+    }
+    
+    section .texto4{
+        background-attachment: scroll !important;
+    }
+    
+    #iniciar .contenido .modal-content, #registrarse .contenido .modal-content, #reiniciar .contenido .modal-content, #codigo_de_reinicio .contenido .modal-content, #nueva_contraseña .contenido .modal-content, #establecido .contenido .modal-content, #perfil .contenido .modal-content{
+        width: 400px;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .menu .menu-info .botones2 .btn, .botones1 .btn{
+        height: 51px;
+    }
+
+}
